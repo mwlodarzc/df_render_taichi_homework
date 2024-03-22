@@ -86,6 +86,8 @@ while gui.running:
         ax, ay, az = camera.look_at()
         fx, fy, fz = camera.look_from()
 
+        if e.key == gui.ESCAPE or e.key == gui.EXIT:
+            gui.running = False
         if not e.key in "jkliopasdqwe":
             continue
         # if e.key == gui.LMB:
