@@ -74,6 +74,7 @@ $$
 p - x = \alpha (a-x) + \beta (b-x)
 $$
 For convenience, let $\hat{p} = p - x$, $\hat{a} = a - x$, $\hat{b} = b - x$, expanding this yields
+
 $$
 \begin{aligned}
     \hat{p}[0] &= \alpha \hat{x}[0] + \beta \hat{b}[0]\\
@@ -81,12 +82,14 @@ $$
     \hat{p}[2] &= \alpha \hat{x}[2] + \beta \hat{b}[2]\\
 \end{aligned}
 $$
+
 There are three equations here, but only two are linearly independent (in terms of linear algebra| this can be roughly understood as 3 equations equal to 1 equation + 2 equations). Therefore, only two equations are needed to solve.
 
 Which two equations to choose?
 We can first combine them in pairs, solve if possible, and switch to another combination if not solvable (e.g., choosing equations 1
 
 Specifically, this means: determine whether three determinants are $0$
+
 $$
 \begin{aligned}
 \det(A_0) &= \left|\begin{matrix}
@@ -120,6 +123,7 @@ $$
 $$
 
 If $\det(A_1) \ne 0$,
+
 $$
 \begin{aligned}
     \alpha &= (\hat{p}[0] \hat{a}[0] + \hat{p}[1] \hat{a}[2]) / \det(A_1) \\
@@ -128,6 +132,7 @@ $$
 $$
 
 If $\det(A_2) \ne 0$,
+
 $$
 \begin{aligned}
     \alpha &= (\hat{p}[0] \hat{a}[0] + \hat{p}[1] \hat{a}[1]) / \det(A_2) \\
