@@ -23,7 +23,7 @@ Main issues addressed:
 - Currently, only supports PLY ascii format. See plyreader2.py for details.
 - Due to axis orientation, textures need to rotate by $-\pi/2$.
 
-## 文件结构
+## File Structure
 
 ```
 - raytrace-c.py (Crystal model rendering program)
